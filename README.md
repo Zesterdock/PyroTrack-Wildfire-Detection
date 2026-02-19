@@ -1,4 +1,4 @@
-# 🔥 PyroTrack: Satellite Wildfire Detection
+#  PyroTrack: Satellite Wildfire Detection
 
 > Binary fire classifier achieving **87% accuracy** on satellite imagery using deep learning
 
@@ -209,4 +209,5 @@ MIT License - See [LICENSE](LICENSE) file for details
 **Project Status:** ✅ Complete  
 **Best Model:** 87% accuracy 
 **Last Updated:** February 2026
+
 
