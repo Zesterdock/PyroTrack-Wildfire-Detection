@@ -1,4 +1,4 @@
-#  PyroTrack: Satellite Wildfire Detection
+#  PhoenixPyre: Satellite Wildfire Detection
 
 > Binary fire classifier achieving **87% accuracy** on satellite imagery using deep learning
 
@@ -8,7 +8,7 @@
 
 ## 🎯 Project Overview
 
-PyroTrack is a satellite-based wildfire detection system that classifies images as containing fire or no fire. The system uses a **MobileNetV2** backbone with custom training strategies to achieve production-ready performance.
+PhoenixPyre is a satellite-based wildfire detection system that classifies images as containing fire or no fire. The system uses a **MobileNetV2** backbone with custom training strategies to achieve production-ready performance.
 
 ### Key Results
 
@@ -209,5 +209,6 @@ MIT License - See [LICENSE](LICENSE) file for details
 **Project Status:** ✅ Complete  
 **Best Model:** 87% accuracy 
 **Last Updated:** February 2026
+
 
 
