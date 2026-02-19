@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# Data (too large for GitHub)
+data/
+*.jpg
+*.jpeg
+*.png
+*.tif
+*.tiff
+*.jp2
+
+# Models (too large for GitHub)
+models/*.pth
+!models/.gitkeep
+
+# Logs
+logs/*.png
+logs/*.log
+logs/tensorboard/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Training outputs
+*.ckpt
+*.pt
+
+# Temporary files
+*.tmp
+*.bak
+*~

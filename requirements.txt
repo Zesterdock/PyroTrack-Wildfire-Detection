@@ -1,0 +1,26 @@
+# Core Dependencies
+numpy>=1.21.0
+matplotlib>=3.5.0
+seaborn>=0.12.0
+
+# Gymnasium (OpenAI Gym replacement)
+gymnasium>=0.28.0
+
+# Reinforcement Learning
+stable-baselines3>=2.0.0
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Progress bars and utilities
+tqdm>=4.65.0
+
+# TensorBoard for logging
+tensorboard>=2.13.0
+
+# For real-world data processing
+scikit-learn>=1.0.0
+requests>=2.28.0
+
+# Optional: For better visualizations
+pillow>=9.0.0
+scipy>=1.9.0
