@@ -76,12 +76,6 @@ python debug_model.py
 | **Actual: Fire** | 80 (TP) | 20 (FN) |
 | **Actual: No-Fire** | 6 (FP) | 94 (TN) |
 
-### Confidence Analysis
-
-- **Fire images:** 58.5% avg confidence
-- **No-fire images:** 11.4% avg confidence  
-- **Separation:** 47.1% (excellent discrimination)
-
 ## 🏗️ Architecture
 
 ```
@@ -104,10 +98,6 @@ Output [no_fire, fire]
 class_weights = [10.0, 1.0]  # [no_fire, fire]
 criterion = CrossEntropyLoss(weight=class_weights, label_smoothing=0.1)
 ```
-
-**Why this works:**
-- Without weighting: 99% false positives ❌
-- With 10x weighting: 6% false positives ✅
 
 ### Optimal Training
 
@@ -137,11 +127,11 @@ PyroTrack-Wildfire-Detection/
 ### 1. Class Weighting is Critical
 Initial training produced 99% fire predictions. 10:1 weighting fixed this completely.
 
-### 2. Less is More
+### 2. Results
 | Epochs | Fire Detection | No-Fire Detection | Overall |
 |--------|---------------|------------------|---------|
 | 2 ✅ | 80% | 94% | **87%** |
-| 35 ❌ | 88% | 19% | 53.5% |
+
 
 More epochs = worse performance due to overfitting.
 
@@ -208,7 +198,7 @@ Contributions welcome! Potential improvements:
 
 MIT License - See [LICENSE](LICENSE) file for details
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - **Dataset:** brsdincer (Kaggle)
 - **Framework:** PyTorch team
@@ -217,5 +207,6 @@ MIT License - See [LICENSE](LICENSE) file for details
 ---
 
 **Project Status:** ✅ Complete  
-**Best Model:** 87% accuracy (2 epochs, 10x class weighting)  
+**Best Model:** 87% accuracy 
 **Last Updated:** February 2026
+
